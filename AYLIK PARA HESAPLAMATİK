@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <unistd.h> 
+
+int para_1 ;
+int para_2 ;
+int para_3 ;
+int para_4 ;
+double aylik_para ;
+
+
+int main(){
+	
+	Beep(5500,1000);
+	
+	printf("1. HAFTA ALDiGiN PARA:");
+	scanf ("%d",&para_1);
+	
+	Beep(5500,1000);
+	printf("2. HAFTA ALDiGiN PARA:");
+	scanf ("%d",&para_2);
+	
+	Beep(5500,1000);
+	printf("3. HAFTA ALDiGiN PARA:");
+	scanf ("%d",&para_3);
+	
+	Beep(5500,1000);
+	printf("4. HAFTA ALDiGiN PARA:");
+	scanf ("%d",&para_4);
+	
+	
+	aylik_para= (para_1 +para_2+para_3+para_4) ;
+	printf("\nALDIGIN PARA TUTARI: %f",aylik_para);
+	
+	if(aylik_para <9500){
+		printf("\nDOLANDIRILDIN askeri üçret 9.500tl git başka yerde çalış ");
+		Beep(5500,1000);
+		printf("\nNE DUŞUNUYORSUN         GERçEGi SOYLEDiM ");
+	}
+	else {
+		printf("\niYi iDARE EDER");
+	}
+}
