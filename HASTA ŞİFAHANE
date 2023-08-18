@@ -1,0 +1,23 @@
+//konuşan-2FUNÇ .c
+#include <stdio.h>
+///void hasta(char brans[]);
+///en tepede adında bahsedilerek tanımıldı
+char* hasta(char sikayet[]){
+	// return sikayet;
+	if (sikayet=="ayak") doktor ("ortopedi");
+	//else return "\nsenin ayagın agrimiyor";
+     else if (sikayet=="burun") doktor ("kbb");
+	else  if (sikayet=="kalp") doktor ("kardiyoloji");
+}  
+
+void doktor(char brans[]){
+	if(brans =="ortopedi")  printf("ayagına krem öneriyorum\n");
+	if(brans =="kpp")  printf("burun sprey yazdım duzenli kunlan\n");
+	if(brans =="kardiyoloji")  printf("ayagına krem öneriyorum\n");
+}
+
+
+int main(){
+	//printf("bemim siyayetim %s ",hasta("ayak")) ;
+	hasta("kalp");
+}
