@@ -1,0 +1,12 @@
+#include <stdio.h>
+//bu program kravyeyi okur
+
+char harf;
+
+int main(){
+	printf("Bir Harfe Basiniz:");
+	scanf("%c", &harf);
+	printf("\nSize %c Harfini Bastiniz", harf);
+	
+	
+}
