@@ -1,0 +1,126 @@
+#include <stdio.h>
+#include <locale.h>
+
+float elma_fiyat = 300.00;
+float portakal_fiyat = 190.10;
+float kiraz_fiyat = 100.40;
+float muz_fiyat = 278.59;
+float seftali_fiyat = 251.79;
+
+int elma_stok = 10;
+int portakal_stok = 10;
+int kiraz_stok = 10;
+int muz_stok = 10;
+int seftali_stok = 10;
+
+float para = 1000.00;
+float kalan_para;
+
+char siparis_kodu;
+
+void ince_cizgi() {
+    printf("\n_________________________________________________\n");
+}
+
+void kalin_cizgi() {
+    printf("\n..................................................\n");
+}
+
+void hesapla(float siparis_tutari, char siparis_ismi[]) {
+    if (kalan_para >= siparis_tutari) {
+        if (siparis_tutari > 0) {
+            kalan_para -= siparis_tutari;
+            kalin_cizgi();
+            Beep(10500,1000);
+            printf("%s MARKET SEPETiNE iLAVE EDiLMiSTiR Kalan para: %.2f TL\n", siparis_ismi, kalan_para);
+        } else {
+        	Beep(10500,1000);
+            printf("YILDIRIM MARKETTE iSTEDiGiNiZ BULUNAMADI !\n");
+            Beep(10500,1000);
+            printf("OZUR DiLERiZ !\n");
+        }
+    } else {
+        printf("PARANIZ YETMiYOR !\n");
+    }
+    kalin_cizgi();
+}
+
+void gecersiz_urun(char gelen_harf) {
+    ince_cizgi();
+     Beep(10500,1000);
+    printf("%c => YILDIRIM MARKETTE BU MEYVE YOK\n.\n", gelen_harf);
+     Beep(10500,1000);
+    printf("%c => OZUR DiLERiZ\n");
+    ince_cizgi();
+}
+
+int main() {
+    setlocale(LC_ALL, "Turkish");
+
+    kalan_para = para;
+
+    while (kalan_para > 0) {
+    	 Beep(10500,1000);
+        printf("iSTEDiGiNiZ MEYVENiN BAS HARFiNi GiRiNiZ\n=",
+               elma_fiyat, elma_stok, portakal_fiyat, portakal_stok, kiraz_fiyat, kiraz_stok, muz_fiyat, muz_stok, seftali_fiyat, seftali_stok);
+
+        scanf(" %c", &siparis_kodu);
+
+        switch (siparis_kodu) {
+            case 'E':
+            case 'e':
+                if (elma_stok > 0) {
+                    hesapla(elma_fiyat, "ELMA");
+                    elma_stok--;
+                } else {
+                    hesapla(0, "ELMA");
+                }
+                break;
+            case 'P':
+            case 'p':
+                if (portakal_stok > 0) {
+                    hesapla(portakal_fiyat, "PORTAKAL");
+                    portakal_stok--;
+                } else {
+                    hesapla(0, "PORTAKAL");
+                }
+                break;
+            case 'K':
+            case 'k':
+                if (kiraz_stok > 0) {
+                    hesapla(kiraz_fiyat, "KiRAZ");
+                    kiraz_stok--;
+                } else {
+                    hesapla(0, "KiRAZ");
+                }
+                break;
+            case 'M':
+            case 'm':
+                if (muz_stok > 0) {
+                    hesapla(muz_fiyat, "MUZ");
+                    muz_stok--;
+                } else {
+                    hesapla(0, "MUZ");
+                }
+                break;
+            case 'S':
+            case 's':
+                if (seftali_stok > 0) {
+                    hesapla(seftali_fiyat, "SEFTALi");
+                    seftali_stok--;
+                } else {
+                    hesapla(0, "SEFTALi");
+                }
+                break;
+            default:
+                gecersiz_urun(siparis_kodu);
+                break;
+        }
+    }
+
+    printf("ARANIZ BiSMiS BULUNMAKTADIR\n");
+    Beep(10500,1000);
+    printf("YiNE BEKLERiZ\n");
+
+    return 0;
+}
