@@ -1,0 +1,152 @@
+#include <stdio.h>		// standart io(GirişÇıkış) işlemleri
+#include <unistd.h>    // sleep fonksiyonu bu kütüphane içerisinde tanımlanmıştır
+#include <Windows.h>
+
+int i;
+ 
+int main(){ 
+	
+	Beep(19500,1000);
+	
+
+
+	printf("\tMiNECRAFT OYUN HiLELERi \n");
+	Beep(10500,1000);
+	printf("\tYUKLENiYOR........... \n");
+	
+	Beep(3500,1000);
+	printf("10%%....BEKLEYiN \n");
+	
+	Beep(3500,1000);
+	printf("20%%....BEKLEYiN\n");
+	
+	Beep(3500,1000);
+	printf("30%%....BEKLEYiN\n");
+	
+	Beep(3500,1000);
+	printf("40%%....BEKLEYiN\n");
+	
+	Beep(3500,1000);
+	printf("50%%....BEKLEYiN\n");
+	
+	Beep(3500,1000);
+	printf("60%%....BEKLEYiN\n");
+	
+	Beep(3500,1000);
+	printf("70%%....BEKLEYiN\n");
+	
+	Beep(3500,1000);
+	printf("80%%....BEKLEYiN\n");
+	
+	Beep(3500,1000);
+	printf("90%%....BEKLEYiN\n");
+	
+	
+	
+	
+	Beep(3500,1000);
+	printf("100%% iSLEM TAMAMLANDI\n");
+	
+	
+	Beep(10500,1000);
+	
+	
+ 	
+	printf("                        ______\n");
+	Beep(1500,250);
+    printf("                    .-\"      \"-.\n");
+    Beep(1500,250);
+    printf("                   /            \\\n");
+    Beep(1500,250);
+    printf("       _          |              |          _\n");
+    Beep(1500,250);
+    printf("      ( \\         |,  .-.  .-.  ,|         / )\n");
+    Beep(1500,250);
+    printf("       > \"=._     | )(__/  \\__)( |     _.=\" <\n");
+    Beep(1500,250);
+    printf("      (_/\"=._\"=._ |/     /\\     \\| _.=\"_.=\"\\_)\n");
+    Beep(1500,250);
+    printf("             \"=._ (_     ^^     _)\"_.=\"\n");
+    Beep(1500,250);
+    printf("                 \"=\\__|IIIIII|__/=\"\n");
+    Beep(1500,250);
+    printf("                _.=\"| \\IIIIII/ |\"=._\n");
+    Beep(1500,250);
+    printf("      _     _.=\"_.=\"\\          /\"=._\"=._     _\n");
+    Beep(1500,250);
+    printf("     ( \\_.=\"_.=\"     `--------`     \"=._\"=._/ )\n");
+    Beep(1500,250);
+    printf("      > _.=\"                            \"=._ <\n");
+    Beep(1500,250);
+    printf("     (_/                                   \\_)\n\n");
+    
+    
+
+
+ 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED );
+  
+    Beep(3500,2000);
+    printf("\t!!!! UYARI: SiSTEMiNiZE    VIRUS BULASTI !!!! \n");	
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    
+     Beep(3500,2000);
+     SetConsoleTextAttribute(hConsole, FOREGROUND_RED );
+     printf("\tIPADRESI ALINIYOR........... \n");
+     SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+     
+     Beep(3500,2000);
+     SetConsoleTextAttribute(hConsole, FOREGROUND_RED );
+     printf("\tIPADRESI BASINA SIZDIRILIYOR........... \n");
+     
+     Beep(3500,2000);
+     SetConsoleTextAttribute(hConsole, FOREGROUND_RED );
+     printf("\t1674948410548952745 \n");
+     
+     
+	 SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN );
+	 printf( "C:\\ HARRDISK FORMATLAMA BASLIYOR \n" );
+ 
+	 
+	 for( i=1; i<100; i++ ){
+	 	printf("%d \n");usleep(40000);
+	 }
+	 
+	 Beep(3500,1000);
+	 printf("100%% TUM DOSYALAR TARANDI!!");
+	 Beep(3500,2000);
+	 printf( "\nC:\\ HARRDISK FORMATLANIYOR" );
+	 
+	 for( i=1; i<100; i++ ){
+	 	printf("%d \n");usleep(30000);
+	 }
+	 
+	 Beep(1500,1000);
+	 printf("100%% C:\\  HARDDISK TAMAMEN FORMATLANDI!");
+	 
+	 Beep(1500,1000);
+	 printf("\n virus basarili virus bilgisayara yuklendi!!!!!!!!!!!!");
+	 
+ 
+	Beep(1500,3000); 
+	SetConsoleTextAttribute(hConsole, FOREGROUND_RED );
+	
+	Beep(1500,3000); 
+	printf("\n!!!!HERSEY SiLiNDi GECMiS OLSUN!!!!");
+	
+	Beep(1500,3000); 
+	SetConsoleTextAttribute(hConsole, FOREGROUND_RED );
+   
+	printf("\n!!!!HA..HA..HA..!!!!");
+	
+	
+
+		
+	SetConsoleTextAttribute(hConsole, FOREGROUND_INTENSITY );
+	getchar();
+	
+	
+	
+	
+	
+}
