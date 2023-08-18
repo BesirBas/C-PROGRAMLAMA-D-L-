@@ -1,0 +1,8 @@
+#include <stdio.h>	
+int banknotlar[200],k;
+int main(){
+	for (k=0; k<200 ; k++){
+		banknotlar[k] = (k+1)*5;
+		printf("%d ",banknotlar[k]);
+	}
+}
