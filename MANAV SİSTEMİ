@@ -1,0 +1,66 @@
+#include <stdio.h>
+/*
+elma=30
+portakal=40
+kiraz=50
+para=100
+
+elma+kiraz+portakal-
+elma+portakal+kiraz-
+kiraz+portakal+elma-
+*/
+int elma    =30;
+int portakal=40;
+int kiraz   =50;
+int armut =100;
+int para    =500;
+char karar;
+int kalan_para ;
+char siparis    ;
+
+int main (){
+	//kravyede siparişi harf ile istesin
+	printf("siparis isin bir harfe basiniz(istediginiz meyvenin ilk harfini giriniz)=");
+	scanf("%c", &siparis);
+		
+	if( siparis=='e'){
+		printf("\n Elma talep ettiniz___________onaylanli");
+		kalan_para=para + elma;
+		printf("\n Kalan PARA: %d ",kalan_para);
+	}else if(siparis=='p'){
+		printf("\n Portakal talep ettiniz___________onaylanli");
+		kalan_para=para + portakal;
+		printf("\n Kalan PARA: %d ",kalan_para);
+	}else if(siparis=='k'){
+		printf("\n Kiraz talep ettiniz___________onaylanli");
+		kalan_para=para + kiraz;
+		printf("\n Kalan PARA: %d ",kalan_para);
+	}if( siparis=='a'){
+		printf("\n armut talep ettiniz___________onaylanli");
+		kalan_para=para + armut;
+		printf("\n Kalan PARA: %d ",kalan_para);
+	} else{
+		printf("aradiginiz meyve besir markette bulunmamaktadir! \n");
+		
+	}
+	
+	
+    printf("\ndevam etmek ister misiniz=");
+    scanf("%", &karar);
+    if( karar=='evet'){
+		printf("\n devam ediliyor ");
+		
+	
+	}else if(karar=='hayır'){
+		printf("\n ------ücret %c ",  kalan_para );
+		
+		
+     }  
+	
+	
+	
+	
+	
+	
+
+}
