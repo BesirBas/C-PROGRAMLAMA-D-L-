@@ -1,0 +1,21 @@
+#include<stdio.h>
+                                         
+
+double bor_bakkala =    -150.25;
+double bor_kasaba =     -400.676875687567567565656765476746475465647579453564746365864536567546;
+double alacak_babadan =  50.567483687523567385687678;
+double alacak_dededen =  250.67867868796789678796254879562487956247562756275788787788778787879879879879879879879879879797979797948677777776887687487648787786789;
+double net_para;
+
+int main(){
+	net_para =bor_bakkala + bor_kasaba + alacak_babadan +alacak_dededen ;
+	printf( "net param:%f     ",net_para);
+	
+	
+	
+	
+	return 0;
+   
+	
+	
+}
