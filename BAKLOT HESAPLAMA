@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() {
+    int toplam, i, j, k, l, m, n;
+    int adet200 = 0, adet100 = 0, adet50 = 0, adet20 = 0, adet10 = 0, adet5 = 0;
+    	Beep(10500,1000);
+    printf("Toplam miktar: ");
+    Beep(10500,1000);
+    scanf("%d", &toplam);
+
+    while (toplam > 0) {
+        if (toplam >= 200) {
+            adet200 = toplam / 200;
+            toplam %= 200;
+        } else if (toplam >= 100) {
+            adet100 = toplam / 100;
+            toplam %= 100;
+        } else if (toplam >= 50) {
+            adet50 = toplam / 50;
+            toplam %= 50;
+        } else if (toplam >= 20) {
+            adet20 = toplam / 20;
+            toplam %= 20;
+        } else if (toplam >= 10) {
+            adet10 = toplam / 10;
+            toplam %= 10;
+        } else if (toplam >= 5) {
+            adet5 = toplam / 5;
+            toplam %= 5;
+        } else {
+            break;
+        }
+    }
+
+    printf("Banknot adetleri:\n");
+    printf("200 TL: %d\n", adet200);
+    printf("100 TL: %d\n", adet100);
+    printf("50 TL: %d\n", adet50);
+    printf("20 TL: %d\n", adet20);
+    printf("10 TL: %d\n", adet10);
+    printf("5 TL: %d\n", adet5);
+
+    return 0;
+}
