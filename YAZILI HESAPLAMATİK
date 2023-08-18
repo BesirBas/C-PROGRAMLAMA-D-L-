@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int yazili_1, yazili_2;
+int proje_son;
+int davranis_notu ;
+double ortalama;
+double toplam ;
+
+int main(){
+	
+	printf("1.YAZILIYI GiR:");
+	scanf ("%d",&yazili_1);
+	
+	
+
+	printf("\n2.YAZILIYI GiR:");
+	scanf ("%d",&yazili_2);
+	
+	printf("\nDAVRANIŞ NOTUN:");
+	scanf ("%d",&davranis_notu);
+	
+	printf("\nDÖNEM SONU PROJE:");
+	scanf ("%d",&proje_son);
+	
+	
+	//printf("\n1.YAZILIYI GİR: %d ", yazili_1);
+	//printf("\n2.YAZILIYI GİR: %d ", yazili_2);
+	//printf("\nDÖNEM SONU PROJE: %d ",proje_son );
+	
+	ortalama= (yazili_1 + yazili_2) /2.00000000000000000000000000000000;
+	printf("\nORTALAMANIZ: %f",ortalama);
+	
+	toplam= (yazili_1 + yazili_2 + proje_son + davranis_notu + ortalama )/5.00000000000000000000000;	
+	printf("\nDERS NOT ORTALAMA:%f ",toplam);
+	
+	if(toplam <45.00){
+		printf("\n!!!!!!!!!!SINIFTA KALDIN SENEYE Go1RUŞURUZ!!!!!!!!!!ÇALiŞTA GEL");
+		
+	}
+	else {
+		printf("\nHAYIRLI OLSUN KARDES BASARILAR");
+	}
+	
+	
+	
+	
+}
