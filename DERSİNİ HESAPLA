@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+float mat_yazili_1= 90;
+float mat_yazili_2= 95;
+float mat_yazili_toplami;
+float mat_proje= 56;
+float mat_ortalama;  //boşş tanımlama (null)
+
+int main(){
+	printf( "MARTEMATİK ORTALAMASI HESAPLANIYOR BEKLEYİN:\n" );
+	mat_ortalama = (mat_yazili_1 + mat_yazili_2 + mat_proje )/3  ;
+	printf("\n %f \n ",mat_ortalama );
+	printf("------------------------------------------------\n");
+	printf("YUKARI YUVARLANMIŞ ORTALAMA: %f \n", ceil(mat_ortalama) );
+	printf("------------------------------------------------\n");
+	printf("MATEMATiK YAZILI TOPLAMI\n");
+	mat_yazili_toplami = (mat_yazili_1 + mat_yazili_2);
+	printf("%f",mat_yazili_toplami);
+	return 0;
+	
+	
+	
+	
+}
