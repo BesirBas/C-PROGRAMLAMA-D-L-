@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+#define T_1 "09876543211"
+#define T_2 "11111111111"
+#define T_3 "12345678998"
+
+bool sifreKontrol(const char *sifre) {
+
+    if (strcmp(sifre, T_1) == 0 ||
+        strcmp(sifre, T_2) == 0 ||
+        strcmp(sifre, T_3) == 0)
+        return true;
+    else
+        return false;
+}
+
+int main() {
+    char girilenSifre[20];
+    printf("SiNOP.COM SiTESiNE HOŞGELDiNiZ\n");
+    
+    printf("TC KiMLiK NO: ");
+    scanf("%s", girilenSifre);
+
+    if (sifreKontrol(girilenSifre))
+        printf("GiRiŞ BAşARILI HOŞGELDiNiZ\n");
+    else
+        printf("HATALI TC NO GiRiş YAPAMAZSINIZ.\n");
+
+    return 0;
+}
+//beşir sunar
